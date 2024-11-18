@@ -1,0 +1,62 @@
+
+*{padding:0;margin:0   }
+body {
+    background-color: #212121;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-family: ui-sans-serif, -apple-system, system-ui, Segoe UI, Helvetica, Apple Color Emoji, Arial, sans-serif, Segoe UI Emoji, Segoe UI Symbol;
+}
+
+.suggestion::before {
+    content: " \25CF";
+    animation: changeContent 0.7s 1s  forwards;
+    color: white;margin-bottom: 5px;
+
+}
+
+
+::-webkit-scrollbar {
+    width: 15px;
+    background: #212121;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #212121;
+    border-radius: 1px;
+    width: 3px !important;
+    height: 10px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2f2f2f;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 10px !important;
+}
+
+::-webkit-scrollbar-thumb:vertical:hover {
+    height: 1px !important;
+}
+
+
+@keyframes changeContent {
+    0% {content : " \25CF"}
+    0% { content: "W \25CF"; }  
+    5% { content: "Wh \25CF"; }
+    10% { content: "Wha \25CF"; }
+    15% { content: "What \25CF"; }
+    20% { content: "What c \25CF"; }
+    25% { content: "What ca \25CF"; }
+    30% { content: "What can \25CF"; }
+    35% { content: "What can i \25CF"; }
+    40% { content: "What can i h \25CF"; }
+    45% { content: "What can i he \25CF"; }
+    50% { content: "What can i hel \25CF"; }
+    55% { content: "What can i help \25CF"; }
+    60% { content: "What can i help w \25CF"; }
+    65% { content: "What can i help wi \25CF"; }
+    70% { content: "What can i help wit \25CF"; }
+    75% { content: "What can i help with \25CF"; }
+    100% { content: "What can i help with?"; } 
+}
